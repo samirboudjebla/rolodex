@@ -1,8 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Main purpose of the project
-Getting familiar with react component, classes, and function 
-implementing a simple fetch API and show the results in a grid component
+Getting familiar with react component, classes, and function.<br />
+implementing a simple fetch API and show the results in a grid component.<br />
 
 
 
