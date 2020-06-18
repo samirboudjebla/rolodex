@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\components",
+    "\\src\\components\\card",
+    "\\src\\components\\card-list"
   ],
+  "SelectedNode": "\\src\\components\\card\\card.component.jsx",
   "PreviewInSolutionExplorer": false
 }

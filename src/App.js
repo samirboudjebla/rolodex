@@ -10,8 +10,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      contacts: [
-      ]
+        contacts: [],
+        searchField: ''
     };
   };
 
@@ -22,13 +22,23 @@ class App extends Component {
   }
 
 
-  render() {
-    return (
-      <div className="App">
-        <CardList contacts={this.state.contacts}>
-        </CardList>
-      </div>
-    );
+    render() {
+        const { contacts, searchField } = this.state;
+        const filteredContacts = contacts.filter(contact =>
+            contact.name.toLowerCase().includes(searchField.toLowerCase()));
+        return (
+            <div className='App'>
+                <input
+                    type='search'
+                    placeholder='search contacts'
+                    onChange={e => this.setState({ searchField: e.target.value }
+                        )
+                    }
+                />
+                <CardList contacts={filteredContacts}>
+            </CardList>
+          </div>
+        );
   }
 
 
