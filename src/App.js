@@ -26,7 +26,6 @@ class App extends Component {
     return (
       <div className="App">
         <CardList contacts={this.state.contacts}>
-
         </CardList>
       </div>
     );
